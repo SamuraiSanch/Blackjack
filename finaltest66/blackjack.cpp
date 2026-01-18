@@ -92,12 +92,17 @@ int getCardValue(const Card &card) {
     case ACE: return 11;
     }
 }
+bool playBlackjack(const std::array<Card,52> &deck) {
+    const Card* ptr = &deck[0];
+    printCard(*ptr);
+    return true;
+}
 int main()
 {
     srand(static_cast<unsigned int>(time(0)));
     rand();
+    // Deck initialization
     std::array<Card, 52> deck;
-
     int card = 0;
     for (int suit = 0; suit < GENERAL_SUITS; ++suit)
         for (int rank = 0; rank < GENERAL_VALUE; ++rank)
@@ -113,8 +118,9 @@ int main()
     swapCard(c, d);
     printCard(c);
     */
-    printDeck(deck);
     shuffleDeck(deck);
     printDeck(deck);
+    playBlackjack(deck);
+
     return 0;
 }

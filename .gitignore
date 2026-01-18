@@ -1,0 +1,20 @@
+# Visual Studio
+.vs/
+
+# Build folders
+Debug/
+Release/
+x64/
+x86/
+
+# Build artifacts
+*.exe
+*.pdb
+*.ilk
+*.obj
+*.tlog
+*.log
+*.recipe
+
+# User files
+*.user
