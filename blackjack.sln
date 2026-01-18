@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{87B741CC-2980-424B-A719-076D83119812}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		CMakeLists.txt = CMakeLists.txt
 	EndProjectSection
 EndProject
 Global
